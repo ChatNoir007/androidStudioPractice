@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE1E1"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Triangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginVertical="5dp"
+        android:text="Triangle"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#DAC0C0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Losuj"
+                android:textSize="30dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:text="Wpisz"
+                android:textSize="30dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CCCFB1"
+        android:gravity="center"
+        android:layout_marginVertical="5dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TextA"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="a ="
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="3"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D8A4A4"
+        android:gravity="center"
+        android:layout_marginVertical="5dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TextB"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="b ="
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="3"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B9E289"
+        android:gravity="center"
+        android:layout_marginVertical="5dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TextC"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="c ="
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/edit3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="3"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Komunikat"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginVertical="5dp"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/random"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E6837C"
+            android:layout_marginHorizontal="15dp"
+            android:text="Losuj"
+            android:onClick="random"/>
+
+        <Button
+            android:id="@+id/check"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:text="Sprawdź"
+            android:onClick="check"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/pytajnik" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Reset"
+        android:onClick="reset"/>
+
+</LinearLayout>

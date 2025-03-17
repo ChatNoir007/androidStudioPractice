@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8DEDE"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/kielce"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4C0C0"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginVertical="20dp"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:paddingHorizontal="10dp"
+            android:text="Lubię"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#B13434"
+            android:text=" - "
+            android:onClick="minus"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#4CAF50"
+            android:text=" + "
+            android:onClick="plus"/>
+
+        <TextView
+            android:id="@+id/licznik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:text="0"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/napis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pomnik Dzika"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginVertical="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#205A7C"
+            android:text="Previous" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#2D89DE"
+            android:text="Next" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
